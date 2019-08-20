@@ -22,6 +22,8 @@ class RolController {
     if (result.serverStatus === 2) return res.status(200).json({ result: "Se Inserto el Rol: " + newRol.NombreRol + " Correctamente" });
     else return res.status(200).json({ result: "Error al Insertar el Rol: " + newRol.NombreRol });
   }
+
+  public actualizar(req: Request, res: Response): Promise<Response> {}
 }
 
 const rol = new RolController();
