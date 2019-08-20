@@ -9,7 +9,9 @@ class RolRouter {
   }
 
   config() {
-    //this.router.get("/", rolController.index);
+    this.router.get("/rol", rolController.listar);
+    this.router.get("/rol/:IdRol", rolController.listarOne);
+    this.router.post("/rol", rolController.insertar);
   }
 }
 
