@@ -4,7 +4,6 @@ import cors from "cors";
 
 //Importacion de las Rutas
 import indexRouter from "./routes/index.routes";
-import tsolicitudRouter from "./routes/tsolicitud.routes";
 import rolRouter from "./routes/rol.routes";
 import permisoRouter from "./routes/permiso.routes";
 
@@ -33,7 +32,6 @@ export class App {
 
   routers(): void {
     this.app.use("/", indexRouter);
-    this.app.use("/api", tsolicitudRouter);
     this.app.use("/api", rolRouter);
     this.app.use("/api", permisoRouter);
   }
