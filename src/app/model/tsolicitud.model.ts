@@ -1,4 +1,4 @@
 export interface TSolicitud {
-    id?: number;
-    tsolicitud: string;
+  id?: number;
+  tsolicitud: string;
 }
